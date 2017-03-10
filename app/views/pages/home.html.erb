@@ -8,14 +8,14 @@
         <div class="well">
             <h2 class="text-center">Basic Membership</h2> 
             <h4>This free membership will allow you get access to what th ecomunity is sharing. You will be able to view  programmers and investors status.</h4>
-            <%= link_to "Sign up Basic", new_user_registration_path, class: "btn btn-primary btn-lg btn-block" %>
+            <%= link_to "Sign up Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
         </div>
     </div>
     <div class="col-md-6">
         <div class="well">
              <h2 class="text-center">Pro Membership</h2>
              <h4>With this $2 per month pro membership, you can go beyond viewing programmers and investors; We will provide you an access to getting their contact information. </h4>
-             <%= link_to "Sign up Pro", new_user_registration_path, class: "btn btn-success btn-lg btn-block" %>
+             <%= link_to "Sign up Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
         </div>
     </div>
 </div>
